@@ -79,11 +79,7 @@ int main() {
 		v3D.push_back(matrix);
 		for (int i=0;i<3;i++){
 			for (int j=0;j<grado+1;j++){
-				if(i==1 && cont2 >0){
-					matrix[i][1] = numeval*matrix[2][cont2];
-					cont2++;
-				}
-				else if (cont2 ==0){
+				if(i==1 ){
 					matrix[i][1] = numeval*matrix[2][0];
 					cont2 = cont2 +1;
 				}
